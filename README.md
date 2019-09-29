@@ -41,7 +41,7 @@ stop() {
 ```
 2. `chmod +x /etc/init.d/otransproxy`
 3. `/etc/init.d/otransproxy enable`
-### Update rules atomically
+### Update rules automatically
 The following operation implements update rules atomically at 5 A.M. for every day.
 1. `crontab -e`
 2. paste `0 5 * * * /opt/OTransproxy/otransproxy.sh --update-rules` and save
