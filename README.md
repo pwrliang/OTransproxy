@@ -1,7 +1,7 @@
 # OTransproxy
 OTransproxy stands for a transparent proxy on OpenWrt. OTransproxy is a simple script to implement a transparent proxy. 
 It forwards foreign network traffic to your V2Ray server, but bypass the local (Chinese sites) traffic. You can also choose which site to bypass/proxy by
-simply modify the script. **My intention in writing this script is to learning shell programming skill.**
+simply modify the script. **My intention in writing this script is to learning shell programming skill. Using at your own risk.**
 
 
 ## Typical usage
