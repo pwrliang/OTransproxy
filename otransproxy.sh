@@ -17,7 +17,7 @@ V2RAY_DNS_PORT=7913
 WHITE_DOMAIN_LIST="ws.example.com ws.example1.com"
 # We bypass the following domains for SoftEther to get original IP
 WHITE_DOMAIN_LIST="$WHITE_DOMAIN_LIST softether-network.net softether.co.jp flets-east.jp flets-west.jp ddns.uxcom.jp"
-WHITE_DOMAIN_LIST="$WHITE_DOMAIN_LIST apple.com microsoft.com"
+WHITE_DOMAIN_LIST="$WHITE_DOMAIN_LIST plex.tv plex.direct apple.com microsoft.com"
 WHITE_IP_LIST="0.0.0.0/8 10.0.0.0/8 100.64.0.0/10 127.0.0.0/8 169.254.0.0/16 172.16.0.0/12 192.168.0.0/16 224.0.0.0/4 240.0.0.0/4 223.5.5.5 223.6.6.6 114.114.114.114 114.114.115.115 1.2.4.8 210.2.4.8 112.124.47.27 114.215.126.16 180.76.76.76 119.29.29.29"
 # These sites are forced using V2ray proxy
 BLACK_IP_LIST=""
