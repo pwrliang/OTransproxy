@@ -1,5 +1,5 @@
 # OTransproxy
-OTransproxy stands for a transparent proxy on OpenWrt. OTransproxy is a simple script to implement a transparent proxy. 
+OTransproxy stands for a transparent proxy on OpenWrt. OTransproxy is a simple script to implement a transparent proxy. [V2Ray](https://github.com/v2ray/v2ray-core) is used as the back-end proxy software.
 It forwards foreign network traffic to your V2Ray server, but bypass the local (Chinese sites) traffic. You can also choose which site to bypass/proxy by
 simply modify the script. **My intention in writing this script is to learning shell programming skill. Using at your own risk.**
 
@@ -41,6 +41,10 @@ stop() {
 ```
 2. `chmod +x /etc/init.d/otransproxy`
 3. `/etc/init.d/otransproxy enable`
+### Update rules automatically
+The following operation implements update rules atomically at 5 A.M. for every day.
+1. `crontab -e`
+2. paste `0 5 * * * /opt/OTransproxy/otransproxy.sh --update-rules` and save
 ### Sample output
 ```sh
 root@GL-AR750:/# mkdir -p /opt/OTransproxy && cd /opt/OTransproxy
