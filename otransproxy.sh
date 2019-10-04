@@ -2,8 +2,8 @@
 WORKPLACE=$(dirname "$0")
 TMP=$WORKPLACE/tmp
 ACCELERATED_DOMAINS_CONF=$TMP/transproxy_accelerated_domains.conf
-WHITE_LIST_CONF=$TMP/transproxy_whitelist.conf
-BLACK_LIST_CONF=$TMP/transproxy_blacklist.conf
+ALLOW_LIST_CONF=$TMP/transproxy_allowlist.conf
+BLOCK_LIST_CONF=$TMP/transproxy_blocklist.conf
 DNS_SERVER_CONF=$TMP/transproxy_server.conf
 DNSMASQ_CONF=/tmp/dnsmasq.d
 UPSTREAM_DNS="192.168.1.1"
@@ -14,14 +14,14 @@ V2RAY_TPROXY_PORT=12345
 V2RAY_DNS_PORT=7913
 # These sites are V2Ray servers
 # We bypass websocket-based v2ray servers
-WHITE_DOMAIN_LIST="ws.example.com ws.example1.com"
+ALLOW_DOMAIN_LIST="ws.example.com ws.example1.com"
 # We bypass the following domains for SoftEther to get original IP
-WHITE_DOMAIN_LIST="$WHITE_DOMAIN_LIST softether-network.net softether.co.jp flets-east.jp flets-west.jp ddns.uxcom.jp"
-WHITE_DOMAIN_LIST="$WHITE_DOMAIN_LIST plex.tv plex.direct apple.com microsoft.com"
-WHITE_IP_LIST="0.0.0.0/8 10.0.0.0/8 100.64.0.0/10 127.0.0.0/8 169.254.0.0/16 172.16.0.0/12 192.168.0.0/16 224.0.0.0/4 240.0.0.0/4 223.5.5.5 223.6.6.6 114.114.114.114 114.114.115.115 1.2.4.8 210.2.4.8 112.124.47.27 114.215.126.16 180.76.76.76 119.29.29.29"
+ALLOW_DOMAIN_LIST="$ALLOW_DOMAIN_LIST softether-network.net softether.co.jp flets-east.jp flets-west.jp ddns.uxcom.jp"
+ALLOW_DOMAIN_LIST="$ALLOW_DOMAIN_LIST plex.tv plex.direct apple.com microsoft.com"
+ALLOW_IP_LIST="0.0.0.0/8 10.0.0.0/8 100.64.0.0/10 127.0.0.0/8 169.254.0.0/16 172.16.0.0/12 192.168.0.0/16 224.0.0.0/4 240.0.0.0/4 223.5.5.5 223.6.6.6 114.114.114.114 114.114.115.115 1.2.4.8 210.2.4.8 112.124.47.27 114.215.126.16 180.76.76.76 119.29.29.29"
 # These sites are forced using V2ray proxy
-BLACK_IP_LIST=""
-BLACK_DOMAIN_LIST="google.com.tw google.com.ncr github.com github.io raw.githubusercontent.com apnic.net s3.amazonaws.com openwrt.org"
+BLOCK_IP_LIST=""
+BLOCK_DOMAIN_LIST="google.com.tw google.com.ncr github.com github.io raw.githubusercontent.com apnic.net s3.amazonaws.com openwrt.org"
 # UPSTREAM/FOREIGN
 DNS_PREFERENCE="UPSTREAM"
 
@@ -172,8 +172,8 @@ config_dnsmasq() {
 
   if [ -d $DNSMASQ_CONF ]; then
     cp -f "$ACCELERATED_DOMAINS_CONF" "$DNSMASQ_CONF/"
-    cp -f "$WHITE_LIST_CONF" "$DNSMASQ_CONF/"
-    cp -f "$BLACK_LIST_CONF" "$DNSMASQ_CONF/"
+    cp -f "$ALLOW_LIST_CONF" "$DNSMASQ_CONF/"
+    cp -f "$BLOCK_LIST_CONF" "$DNSMASQ_CONF/"
     cp -f "$DNS_SERVER_CONF" "$DNSMASQ_CONF/"
   else
     echo_date "Can not found $DNSMASQ_CONF"
@@ -227,16 +227,16 @@ update_rules() {
     echo "$latest_versions" >"$TMP/version"
   fi
 
-  echo "# These domain will be resolved by local dns server" > "$BLACK_LIST_CONF"
-  for domain in $BLACK_DOMAIN_LIST; do
-    echo "$domain" | sed "s/^/server=&\/./g" | sed "s/$/\/127.0.0.1#$V2RAY_DNS_PORT/g" >> "$BLACK_LIST_CONF"
-    echo "$domain" | sed "s/^/ipset=&\/./g" | sed "s/$/\/BLACK_SET/g" >> "$BLACK_LIST_CONF"
+  echo "# These domain will be resolved by local dns server" > "$BLOCK_LIST_CONF"
+  for domain in $BLOCK_DOMAIN_LIST; do
+    echo "$domain" | sed "s/^/server=&\/./g" | sed "s/$/\/127.0.0.1#$V2RAY_DNS_PORT/g" >> "$BLOCK_LIST_CONF"
+    echo "$domain" | sed "s/^/ipset=&\/./g" | sed "s/$/\/BLOCK_SET/g" >> "$BLOCK_LIST_CONF"
   done
 
-  echo "# These domain will be resolved by $UPSTREAM_DNS" > "$WHITE_LIST_CONF"
-  for domain in $WHITE_DOMAIN_LIST; do
-    echo "$domain" | sed "s/^/server=&\/./g" | sed "s/$/\/$UPSTREAM_DNS/g" >> "$WHITE_LIST_CONF"
-    echo "$domain" | sed "s/^/ipset=&\/./g" | sed "s/$/\/WHITE_SET/g" >> "$WHITE_LIST_CONF"
+  echo "# These domain will be resolved by $UPSTREAM_DNS" > "$ALLOW_LIST_CONF"
+  for domain in $ALLOW_DOMAIN_LIST; do
+    echo "$domain" | sed "s/^/server=&\/./g" | sed "s/$/\/$UPSTREAM_DNS/g" >> "$ALLOW_LIST_CONF"
+    echo "$domain" | sed "s/^/ipset=&\/./g" | sed "s/$/\/ALLOW_SET/g" >> "$ALLOW_LIST_CONF"
   done
 
   [ ! -f "$DNS_SERVER_CONF" ] && {
@@ -255,25 +255,25 @@ update_rules() {
 
 flush_nat(){
   iptables -t nat -F V2RAY >/dev/null 2>&1
-  ipset -F WHITE_SET >/dev/null 2>&1
-  ipset -F BLACK_SET >/dev/null 2>&1
+  ipset -F ALLOW_SET >/dev/null 2>&1
+  ipset -F BLOCK_SET >/dev/null 2>&1
 }
 
 creat_ipset(){
   echo_date "Creating ipset"
-	ipset -! create WHITE_SET nethash && ipset flush WHITE_SET
-  ipset -! create BLACK_SET nethash && ipset flush BLACK_SET
+	ipset -! create ALLOW_SET nethash && ipset flush ALLOW_SET
+  ipset -! create BLOCK_SET nethash && ipset flush BLOCK_SET
 	# 中国IP加入白名单
-	sed -e "s/^/add WHITE_SET &/g" "$TMP/chnroute.txt" | awk '{print $0} END{print "COMMIT"}' | ipset -R
+	sed -e "s/^/add ALLOW_SET &/g" "$TMP/chnroute.txt" | awk '{print $0} END{print "COMMIT"}' | ipset -R
 
-	for ip in $WHITE_IP_LIST
+	for ip in $ALLOW_IP_LIST
 	do
-		ipset -! add WHITE_SET "$ip" >/dev/null 2>&1
+		ipset -! add ALLOW_SET "$ip" >/dev/null 2>&1
 	done
 
-	for ip in $BLACK_IP_LIST
+	for ip in $BLOCK_IP_LIST
 	do
-		ipset -! add BLACK_SET $ip >/dev/null 2>&1
+		ipset -! add BLOCK_SET $ip >/dev/null 2>&1
 	done
 }
 
@@ -282,9 +282,9 @@ apply_nat_rules(){
   # 新建一个名为 V2RAY 的链
   iptables -t nat -N V2RAY >/dev/null 2>&1
   # 直连白名单网站
-  iptables -t nat -A V2RAY -p tcp -m set --match-set WHITE_SET dst -j RETURN
+  iptables -t nat -A V2RAY -p tcp -m set --match-set ALLOW_SET dst -j RETURN
   # 黑名单走代理
-  iptables -t nat -A V2RAY -p tcp -m set --match-set BLACK_SET dst -j REDIRECT --to-ports $V2RAY_TPROXY_PORT
+  iptables -t nat -A V2RAY -p tcp -m set --match-set BLOCK_SET dst -j REDIRECT --to-ports $V2RAY_TPROXY_PORT
   # 直连 SO_MARK 为 0xff 的流量(0xff 是 16 进制数，数值上等同与上面配置的 255)，此规则目的是避免代理本机(网关)流量出现回环问题
   iptables -t nat -A V2RAY -p tcp -j RETURN -m mark --mark 0xff
   # 其余流量转发到 12345 端口（即 V2Ray）
