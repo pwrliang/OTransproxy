@@ -1,0 +1,41 @@
+# V2Ray Servers
+ws.example.com
+ws.example1.com
+
+# SoftEther DDNS Servers
+softether-network.net
+softether.co.jp
+flets-east.jp
+flets-west.jp
+ddns.uxcom.jp
+
+# Plex
+plex.tv
+plex.direct
+
+# These sites need bypass for localized service
+apple.com
+microsoft.com
+
+# Lan IPs
+0.0.0.0/8
+10.0.0.0/8
+100.64.0.0/10
+127.0.0.0/8
+169.254.0.0/16
+172.16.0.0/12
+192.168.0.0/16
+224.0.0.0/4
+240.0.0.0/4
+
+# DNS Servers
+223.5.5.5
+223.6.6.6
+114.114.114.114
+114.114.115.115
+1.2.4.8
+210.2.4.8
+112.124.47.27
+114.215.126.16
+180.76.76.76
+119.29.29.29
