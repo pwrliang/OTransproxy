@@ -7,8 +7,8 @@ simply modify the script. **My intention in writing this script is to learning s
 ## Typical usage
 ### Install
 1. `mkdir -p /opt/OTransproxy && cd /opt/OTransproxy && wget https://raw.githubusercontent.com/pwrliang/OTransproxy/master/otransproxy.sh && chmod +x otransproxy.sh`
-2. `wget https://raw.githubusercontent.com/pwrliang/OTransproxy/master/config.json` and custom it 
-**(OR you can put your own config.json under /opt/OTransproxy)**
+2. `wget https://raw.githubusercontent.com/pwrliang/OTransproxy/master/config.json && https://raw.githubusercontent.com/pwrliang/OTransproxy/master/bypass.list && https://raw.githubusercontent.com/pwrliang/OTransproxy/master/proxy.list` and custom it 
+**(OR you can copy your own config.json to /opt/OTransproxy)**
 3. `vi otransproxy.sh` and then, fill your own V2Ray server IPs/domains into WHITE_IP_LIST/WHITE_DOMAIN_LIST 
 **(otherwise your domain will be resolved INFINITELY)**
 4. `./otransproxy.sh --install` This step will download V2Ray and bypass rules.
