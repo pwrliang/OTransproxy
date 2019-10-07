@@ -38,7 +38,7 @@ read_host_list() {
       continue
     fi;
 
-    if [[ $line =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+(/[0-9]+)?$ ]]; then
+    if [ "$(expr "$line" : '[[:digit:]+\.[:digit:]+\.[:digit:]+\.[:digit:]+(/[:digit:]+)?]')" -ne 0 ]; then
       ip_list="$line $ip_list"
     else
       domain_list="$line $domain_list"
