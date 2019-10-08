@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 WORKPLACE="$(cd "$(dirname "$0")" && pwd -P)"
-# shellcheck disable=SC2128
-SCRIPT_NAME=$(basename "$BASH_SOURCE")
+SCRIPT_NAME="$(basename "$0")"
 SCRIPT_PATH="$WORKPLACE/$SCRIPT_NAME"
 INIT_PATH="/etc/init.d/otransproxy"
 LOG="$WORKPLACE/log"
