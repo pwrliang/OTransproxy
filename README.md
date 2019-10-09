@@ -33,6 +33,49 @@ The following operation implements update rules atomically at 5 A.M. for every d
 2. append `0 5 * * * /opt/OTransproxy/otransproxy.sh --update-rules`
 ### Sample output
 ```sh
+BusyBox v1.28.3 () built-in shell (ash)
+
+  _______                     ________        __
+ |       |.-----.-----.-----.|  |  |  |.----.|  |_
+ |   -   ||  _  |  -__|     ||  |  |  ||   _||   _|
+ |_______||   __|_____|__|__||________||__|  |____|
+          |__| W I R E L E S S   F R E E D O M
+ -----------------------------------------------------
+ OpenWrt 18.06.1, r7258-5eb055306f
+ -----------------------------------------------------
+root@GL-AR750:/opt# mkdir -p /opt/OTransproxy && \
+> cd /opt/OTransproxy && \
+> wget -q https://raw.githubusercontent.com/pwrliang/OTransproxy/master/otransproxy.sh && \
+> wget -q https://raw.githubusercontent.com/pwrliang/OTransproxy/master/config.json && \
+> wget -q https://raw.githubusercontent.com/pwrliang/OTransproxy/master/bypass.list && \
+> wget -q https://raw.githubusercontent.com/pwrliang/OTransproxy/master/proxy.list && \
+> chmod +x otransproxy.sh
+root@GL-AR750:/opt/OTransproxy# vi bypass.list
+root@GL-AR750:/opt/OTransproxy# vi config.json
+root@GL-AR750:/opt/OTransproxy# ./otransproxy.sh --install
+Tue Oct  8 15:01:07 UTC 2019 - Checking V2Ray version
+Tue Oct  8 15:01:17 UTC 2019 - Downloading V2Ray v4.20.0
+Downloaded
+Unziping...
+V2Ray installed
+Tue Oct  8 15:11:21 UTC 2019 - Detected rules changed, downloading...
+Tue Oct  8 15:11:40 UTC 2019 - Generating /opt/OTransproxy/tmp/transproxy_accelerated_domains.conf
+Tue Oct  8 15:12:00 UTC 2019 - China route list downloaded
+root@GL-AR750:/opt/OTransproxy# ./otransproxy.sh --start
+Tue Oct  8 15:13:00 UTC 2019 - V2Ray has been started
+Tue Oct  8 15:13:00 UTC 2019 - Copy dnsmasq configurations
+Tue Oct  8 15:13:00 UTC 2019 - Restart dnsmasq
+Tue Oct  8 15:13:02 UTC 2019 - Creating ipset
+Tue Oct  8 15:13:04 UTC 2019 - Applying iptables
+Tue Oct  8 15:13:04 UTC 2019 - Optimize network
+root@GL-AR750:/opt/OTransproxy# ./otransproxy.sh --enable
+root@GL-AR750:/opt/OTransproxy# curl google.com
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="http://www.google.com/">here</A>.
+</BODY></HTML>
 ```
 ---
 ## Note 
