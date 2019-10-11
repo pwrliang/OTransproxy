@@ -419,10 +419,14 @@ main() {
     start_service
     ;;
   "--update-rules")
+    # CLEANUP
     update_rules
+    flush_nat
     clean_dnsmasq
+    # START
     config_dnsmasq
     restart_dnsmasq
+    load_nat
     ;;
   "--enable")
     setup_init_script
