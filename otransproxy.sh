@@ -30,8 +30,7 @@ read_host_list() {
   ip_list=""
   domain_list=""
 
-  # shellcheck disable=SC2039
-  while IFS= read -r line || [[ -n "${line}" ]]; do
+  while IFS= read -r line || [ -n "${line}" ]; do
     line=$(echo "${line}" | xargs)
     if [ -z "${line}" ] || [ "$(echo "${line}" | cut -c 1)" = "#" ]; then
       continue
