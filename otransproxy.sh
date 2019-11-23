@@ -9,7 +9,7 @@ ACCELERATED_DOMAINS_CONF="$TMP/transproxy_accelerated_domains.conf"
 BYPASS_LIST_CONF="$TMP/transproxy_bypass_domains.conf"
 PROXY_LIST_CONF="$TMP/transproxy_proxy_domains.conf"
 DNS_SERVER_CONF="$TMP/transproxy_server.conf"
-DNSMASQ_CONF="/tmp/dnsmasq.d"
+DNSMASQ_CONF="/etc/dnsmasq.d"
 UPSTREAM_DNS="192.168.1.1"
 if [ -f "/tmp/resolv.conf.auto" ]; then
   UPSTREAM_DNS=$(cut -d " " -f 2 </tmp/resolv.conf.auto|grep -v 0.0.0.0|grep -v 127.0.0.1|sed -n 2p)
