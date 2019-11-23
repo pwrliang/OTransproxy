@@ -11,8 +11,8 @@ PROXY_LIST_CONF="$TMP/transproxy_proxy_domains.conf"
 DNS_SERVER_CONF="$TMP/transproxy_server.conf"
 DNSMASQ_CONF="/etc/dnsmasq.d"
 UPSTREAM_DNS="192.168.1.1"
-if [ -f "/tmp/resolv.conf.auto" ]; then
-  UPSTREAM_DNS=$(cut -d " " -f 2 </tmp/resolv.conf.auto|grep -v 0.0.0.0|grep -v 127.0.0.1|sed -n 2p)
+if [ -f "/etc/resolv.conf" ]; then
+  UPSTREAM_DNS=$(cut -d " " -f 2 </etc/resolv.conf|grep -v 0.0.0.0|grep -v 127.0.0.1|sed -n 2p)
 fi
 V2RAY_TPROXY_PORT=12345
 V2RAY_DNS_PORT=7913
