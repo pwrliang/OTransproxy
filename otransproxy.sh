@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 WORKPLACE="$(cd "$(dirname "$0")" && pwd -P)"
 SCRIPT_NAME="$(basename "$0")"
 SCRIPT_PATH="$WORKPLACE/$SCRIPT_NAME"
@@ -23,7 +23,6 @@ PROXY_IP_LIST=""
 # UPSTREAM/FOREIGN
 DNS_PREFERENCE="UPSTREAM"
 
-# shellcheck disable=SC2039
 if [ $EUID -ne 0 ]; then
   echo "ERROR: This script must be run as root." >&2
   exit 1
