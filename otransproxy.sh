@@ -2,13 +2,13 @@
 WORKPLACE="$(cd "$(dirname "$0")" && pwd -P)"
 SCRIPT_NAME="$(basename "$0")"
 SCRIPT_PATH="$WORKPLACE/$SCRIPT_NAME"
-INIT_PATH="/etc/init.d/otransproxy"
+INIT_PATH="/etc/systemd/system/otransproxy.service"
 LOG="$WORKPLACE/log"
 TMP="$WORKPLACE/tmp"
-ACCELERATED_DOMAINS_CONF="$TMP/transproxy_accelerated_domains.conf"
-BYPASS_LIST_CONF="$TMP/transproxy_bypass_domains.conf"
-PROXY_LIST_CONF="$TMP/transproxy_proxy_domains.conf"
-DNS_SERVER_CONF="$TMP/transproxy_server.conf"
+ACCELERATED_DOMAINS_CONF="$TMP/otransproxy_accelerated_domains.conf"
+BYPASS_LIST_CONF="$TMP/otransproxy_bypass_domains.conf"
+PROXY_LIST_CONF="$TMP/otransproxy_proxy_domains.conf"
+DNS_SERVER_CONF="$TMP/otransproxy_server.conf"
 DNSMASQ_CONF="/etc/dnsmasq.d"
 UPSTREAM_DNS="192.168.1.1"
 if [ -f "/etc/resolv.conf" ]; then
@@ -22,6 +22,12 @@ PROXY_DOMAIN_LIST=""
 PROXY_IP_LIST=""
 # UPSTREAM/FOREIGN
 DNS_PREFERENCE="UPSTREAM"
+
+# shellcheck disable=SC2039
+if [ $EUID -ne 0 ]; then
+  echo "ERROR: This script must be run as root." >&2
+  exit 1
+fi
 
 # First param is path. Second param is boolean, 1 means return IPs otherwise return domains
 read_host_list() {
@@ -125,25 +131,31 @@ install_v2ray() {
 
 setup_init_script() {
   cat > $INIT_PATH <<-EOF
-#!/bin/sh /etc/rc.common
-# The script to start OTransproxy service
-# Copyright (C) 2007 OpenWrt.org
 
-START=99
-STOP=99
+[Unit]
+Description=OTransproxy Service
+After=network.target
+After=network-online.target
+After=dnsmasq.service
 
-start() {
-    $SCRIPT_PATH --start >> $LOG/otransparent.log
-}
+[Service]
+User=spark
+Type=forking
+ExecStart=$SCRIPT_PATH --start >> $LOG/otransparent.log
+ExecStop=$SCRIPT_PATH --stop >> $LOG/otransparent.log
+Restart=$SCRIPT_PATH --restart >> $LOG/otransparent.log
+ExecReload=$SCRIPT_PATH --update-rules >> $LOG/otransparent.log
 
-stop() {
-    $SCRIPT_PATH --stop >> $LOG/otransparent.log
-}
+[Install]
+WantedBy=multi-user.target
+
 EOF
   # shellcheck disable=SC2181
   if [ $? -eq 0 ]; then
+    SERVICE_NAME=$(basename $INIT_PATH)
     chmod +x $INIT_PATH
-    $INIT_PATH enable
+    systemctl daemon-reload
+    systemctl enable "$SERVICE_NAME"
   else
     echo "Failed to write init script"
     exit 1
@@ -152,7 +164,8 @@ EOF
 
 teardown_init_script() {
   if [ -f $INIT_PATH ]; then
-    $INIT_PATH disable
+    SERVICE_NAME=$(basename $INIT_PATH)
+    systemctl disable "$SERVICE_NAME"
     rm -f $INIT_PATH
   else
     echo "Can not found $INIT_PATH"
@@ -265,7 +278,7 @@ config_dnsmasq() {
 clean_dnsmasq() {
   echo_date "Remove dnsmasq configurations"
   if [ -d $DNSMASQ_CONF ]; then
-    rm -f $DNSMASQ_CONF/transproxy_* >/dev/null 2>&1
+    rm -f $DNSMASQ_CONF/otransproxy_* >/dev/null 2>&1
   fi
 }
 
@@ -443,8 +456,8 @@ main() {
     echo "  --stop: Stop V2RAY and flush transproxy"
     echo "  --restart: restart is an alise of --stop & --start"
     echo "  --update-rules: Download rules"
-    echo "  --enable: enable startup for OTransproxy when the system up"
-    echo "  --disable: disable startup for OTransproxy when the system up"
+    echo "  --enable: enable OTransproxy service"
+    echo "  --disable: disable OTransproxy service"
     echo ""
     echo "NOTE: You should put config.json, bypass.list and proxy.list under $WORKPLACE"
     ;;
