@@ -138,12 +138,11 @@ After=network-online.target
 After=dnsmasq.service
 
 [Service]
-User=spark
 Type=forking
-ExecStart=$SCRIPT_PATH --start >> $LOG/otransparent.log
-ExecStop=$SCRIPT_PATH --stop >> $LOG/otransparent.log
-Restart=$SCRIPT_PATH --restart >> $LOG/otransparent.log
-ExecReload=$SCRIPT_PATH --update-rules >> $LOG/otransparent.log
+ExecStart=$SCRIPT_PATH --start | tee -a $LOG/otransparent.log
+ExecStop=$SCRIPT_PATH --stop | tee -a $LOG/otransparent.log
+Restart=$SCRIPT_PATH --restart | tee -a $LOG/otransparent.log
+ExecReload=$SCRIPT_PATH --update-rules | tee -a $LOG/otransparent.log
 
 [Install]
 WantedBy=multi-user.target
