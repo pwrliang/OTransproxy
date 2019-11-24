@@ -139,10 +139,11 @@ After=dnsmasq.service
 
 [Service]
 Type=forking
-ExecStart=$SCRIPT_PATH --start | tee -a $LOG/otransparent.log
-ExecStop=$SCRIPT_PATH --stop | tee -a $LOG/otransparent.log
-Restart=$SCRIPT_PATH --restart | tee -a $LOG/otransparent.log
-ExecReload=$SCRIPT_PATH --update-rules | tee -a $LOG/otransparent.log
+ExecStart=$SCRIPT_PATH --start
+ExecStop=$SCRIPT_PATH --stop
+Restart=$SCRIPT_PATH --restart
+ExecReload=$SCRIPT_PATH --update-rules
+StandardOutput=journal+console
 
 [Install]
 WantedBy=multi-user.target
