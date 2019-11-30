@@ -258,7 +258,7 @@ optimize_network(){
 config_dnsmasq() {
   echo_date "Copy dnsmasq configurations"
   # NOTE: all conf files start with "transproxy_"
-  if [ ! -f "$TMP/transproxy_server.conf" ]; then
+  if [ ! -f "$TMP/otransproxy_server.conf" ]; then
     echo_date 'Can not found dnsmasq configuration. You should run the script with "--update-rules" first'
     exit 1
   fi
