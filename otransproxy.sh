@@ -12,7 +12,7 @@ DNS_SERVER_CONF="$TMP/otransproxy_server.conf"
 DNSMASQ_CONF="/etc/dnsmasq.d"
 UPSTREAM_DNS="192.168.1.1"
 if [ -f "/etc/resolv.conf" ]; then
-  UPSTREAM_DNS=$(cut -d " " -f 2 </etc/resolv.conf|grep -v 0.0.0.0|grep -v 127.0.0.1|sed -n 2p)
+  UPSTREAM_DNS=$(cut -d " " -f 2 </etc/resolv.conf|grep -v 0.0.0.0|grep -v 127.0.0.1|sed -n 1p)
 fi
 V2RAY_TPROXY_PORT=12345
 V2RAY_DNS_PORT=7913
