@@ -1129,7 +1129,6 @@
 106666d.com
 1066888.com
 106903.com
-106jsw.com
 1073.com
 107788.com
 107cine.com
@@ -9021,6 +9020,7 @@ aardio.com
 aaspt.net
 aastartups.com
 aatccn.com
+aaxxr.com
 aay63.com
 aayfw.com
 aazao.com
@@ -10591,6 +10591,7 @@ any8.com
 anyan.com
 anyang100.com
 anyangedu.com
+anyant.com
 anybeen.com
 anydd.com
 anyelse.com
@@ -12129,6 +12130,7 @@ baoxili.com
 baoxinleasing.com
 baoxinwen.com
 baoxuanhunsha.com
+baoxuexi.com
 baoyang1.com
 baoyang88.com
 baoyang888.com
@@ -14746,6 +14748,7 @@ caicomes.com
 caicui.com
 caidan2.com
 caidao1.com
+caidao8.com
 caidaocloud.com
 caidaoli.com
 caidian.com
@@ -15518,7 +15521,6 @@ cdnet.win
 cdnet110.com
 cdnetworks.com
 cdnetworks.net
-cdnfly.biz
 cdngl.net
 cdngslb.com
 cdngtm.com
@@ -17175,7 +17177,6 @@ chinayigui.com
 chinayk.com
 chinaymc.com
 chinayouji.com
-chinayoyocar.com
 chinayyjx.com
 chinayyo.com
 chinaz.com
@@ -23987,7 +23988,6 @@ emojiall.com
 emojimobile.com
 empos.net
 ems517.com
-emsec.hk
 emshost.com
 emswxw.com
 emtronix.com
@@ -24319,7 +24319,6 @@ eszwdx.com
 et59.com
 etao.com
 etaog.com
-etaoshi.com
 etaxcn.com
 etccenter.com
 etcchebao.com
@@ -25304,6 +25303,7 @@ feizhaojun.com
 feizl.com
 felearn.com
 feling.net
+felink.com
 felix021.com
 felixglow.com
 felixhe.net
@@ -29850,6 +29850,7 @@ hbhdhd.com
 hbhm.net
 hbhtcm.com
 hbhtxx.com
+hbhxbb.com
 hbhxqq.com
 hbhyychem.com
 hbhz.net
@@ -31768,6 +31769,7 @@ htsgh5.com
 htsh.cc
 htsjdp.com
 htstzm.com
+htt5.com
 httingshu.com
 http-cache.com
 httpcn.com
@@ -39681,7 +39683,6 @@ lancdn.com
 lanconvey.com
 landa-solenoid.com
 landai.com
-landcement.com
 landed.cc
 landi.com
 landian.la
@@ -44496,6 +44497,7 @@ mogu.io
 mogubill.com
 mogucdn.com
 mogucun.net
+mogudong.com
 moguf.com
 mogujia.com
 mogujie.com
@@ -45687,7 +45689,6 @@ ncu.me
 ncu.space
 ncvtinfo.com
 ncvtmi.com
-ncwjfc.com
 ncwsxd.com
 ncwuli.com
 ncwyxh.com
@@ -50084,7 +50085,6 @@ qisucdn.com
 qisuu.com
 qisuu.la
 qite111.com
-qitedao.com
 qitete.com
 qiti88.com
 qitian.biz
@@ -53067,7 +53067,6 @@ sgndjy.com
 sgnet.cc
 sgnongkang.com
 sgou.com
-sgseed.cc
 sgshero.com
 sgshuangfa.com
 sgsxw.com
@@ -57322,6 +57321,7 @@ tavsiktlig.com
 tax-edu.net
 tax12366.org
 taxiaoshuo.com
+taxjiangkewang.com
 taxnote.org
 taxspirit.com
 taxwen.com
@@ -57387,6 +57387,7 @@ tcchaoshi.com
 tccqb.com
 tccxfw.com
 tcdai.com
+tcdbcc.com
 tcdnlive.com
 tcdnv3.com
 tcdnvod.com
@@ -58118,7 +58119,6 @@ timeshill.com
 timeso.cc
 timetw.com
 timev.com
-timewhile.com
 timing360.com
 timipc.com
 timitime.com
@@ -58752,7 +58752,6 @@ toysir.com
 toysuperman.com
 tp8.me
 tp88.net
-tp999.net
 tpba1688.com
 tpbar.com
 tpbook.com
@@ -61449,6 +61448,7 @@ wangjubao.com
 wangjunwei.com
 wangketuan.com
 wangkuai.net
+wangle.com
 wangleipeng.com
 wanglibank.com
 wanglibao.com
@@ -63198,7 +63198,6 @@ wjiaxing.com
 wjiee.com
 wjika.com
 wjin.cc
-wjiul.com
 wjjfjt.com
 wjkwl.com
 wjlkj.com
@@ -64452,7 +64451,6 @@ xb100.net
 xb2s.com
 xb918116.com
 xbaixing.com
-xbaoj.com
 xbaquge.com
 xbase.cloud
 xbatu.com
@@ -64486,7 +64484,6 @@ xbiqugew.com
 xbirder.com
 xbj8888.com
 xbjianzhan.com
-xbk020.com
 xblds.com
 xblyw.com
 xbmiaomu.com
@@ -65127,6 +65124,7 @@ xiaokesoso.com
 xiaokuihua.net
 xiaokusha.com
 xiaokyx.com
+xiaolaba.xin
 xiaolai.net
 xiaolajiao.com
 xiaolang.xyz
@@ -65490,7 +65488,9 @@ xigo.tv
 xigua-yingyin.com
 xigua.com
 xigua110.com
+xigua15.cc
 xigua15.com
+xigua15.net
 xigua66.com
 xiguabook.com
 xiguaimg.com
@@ -66697,6 +66697,7 @@ xueepay.com
 xueersen.com
 xueersi.com
 xueerxing.com
+xuefaschool.com
 xuefenxi.com
 xuefo.net
 xuegaogame.com
@@ -67171,7 +67172,6 @@ xztyhl.com
 xztz88.com
 xzw.com
 xzwwxn.com
-xzwyu.com
 xzx.com
 xzxw.com
 xzycate.com
@@ -67913,6 +67913,7 @@ yibaixun.com
 yiban.io
 yiban1314.com
 yibanglv.com
+yibannashuiren.com
 yibei.com
 yibencaijing.com
 yibianxueyuan.com
@@ -70677,7 +70678,6 @@ zf313.com
 zf3d.com
 zf503.com
 zf678.com
-zfanc.com
 zfancy.net
 zfbgelycyf09.com
 zfboke.com
@@ -70898,7 +70898,6 @@ zgynys.com
 zgyongxin.com
 zgyryt.com
 zgys.net
-zgysjs.cc
 zgyssyxh.com
 zgyuwen.com
 zgyxlzzs.com
