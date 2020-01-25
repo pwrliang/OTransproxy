@@ -89,7 +89,6 @@
 00it.net
 00ksw.net
 00lewen.com
-00oo00.com
 00red.com
 00sy.com
 00sy.net
@@ -860,7 +859,6 @@
 09t55.com
 0a38.com
 0bug.org
-0car.com
 0car0.com
 0cneu2.com
 0ctrl.com
@@ -6530,7 +6528,6 @@
 66money.com
 66nao.com
 66nh.com
-66pei.com
 66php.com
 66play.com
 66rou.com
@@ -7357,6 +7354,7 @@
 80baicai.biz
 80fans.com
 80halta.com
+80hcw.com
 80hman.com
 80host.com
 80iter.com
@@ -8094,6 +8092,7 @@
 91lync.com
 91maker.com
 91mariadb.com
+91mcpz.com
 91mitang.com
 91mjw.com
 91money.com
@@ -9484,6 +9483,7 @@ ahongyan.com
 ahonn.me
 ahougn.com
 ahpai.cc
+ahphi.com
 ahqmdq.com
 ahqnrc.com
 ahrcty.com
@@ -16360,6 +16360,7 @@ chibaole.com
 chic-auto.com
 chichuang.com
 chidaoni.com
+chidaoshop.com
 chidudata.com
 chiefmore.com
 chiefsexy.com
@@ -19167,7 +19168,6 @@ cptry.com
 cptxn.com
 cpu668.com
 cpubbs.com
-cpv6.com
 cpvjob.com
 cpxsxk.com
 cpython.org
@@ -21461,7 +21461,6 @@ dimg.cc
 dimpurr.com
 dinais.com
 dindin.com
-dingcongart.com
 dingdanggj.com
 dingdangsheji.com
 dingdean.com
@@ -21811,7 +21810,6 @@ dmhmusic.com
 dmiug.com
 dmlei.com
 dmmds.com
-dmn77.com
 dmnongye.com
 dmowang.com
 dmozdir.org
@@ -23972,6 +23970,7 @@ enroo.com
 enrz.com
 ensbiz.com
 enscg.com
+enshi9e.com
 enshifdc.com
 enshijob.com
 enstylement.com
@@ -27830,7 +27829,6 @@ goosai.com
 goosail.com
 gooseeker.com
 goosetalk.com
-goouwk.com
 goovvg.com
 gooxi.com
 gooyo.com
@@ -29775,6 +29773,7 @@ hbksw.com
 hbky.com
 hbla.net
 hblady.com
+hblccy.com
 hble6.com
 hblijiehb.com
 hbliti.com
@@ -39862,6 +39861,7 @@ lbxcn.com
 lbxdrugs.com
 lbxueyuan.com
 lbzuo.com
+lc-news.com
 lc123.net
 lc800.com
 lcbdf.net
@@ -39889,12 +39889,14 @@ lcol.net
 lcouncil.com
 lcrcbank.com
 lcread.com
+lcsrmyy.com
 lctuan.com
 lcux.net
 lcxwfc.com
 lcxxg.com
 lcygjlb.com
 lcyp.net
+lczyy.com
 ld-eo.com
 ld0766.com
 ld12366.com
@@ -42723,6 +42725,7 @@ manwei99.com
 manwuxian123.com
 manxiangyi.com
 many88.com
+manyjs.com
 manylaw.com
 manymoonsculture.org
 manyoo.net
@@ -42883,6 +42886,7 @@ maxjia.com
 maxket.com
 maxlv.org
 maxpda.com
+maxreader.net
 maxstv.com
 maxthon.com
 maxthonimg.com
@@ -46603,7 +46607,6 @@ oa25.org
 oa8000.com
 oabg.net
 oabt.org
-oabt004.com
 oabt005.com
 oabus.net
 oachn.net
@@ -50797,7 +50800,6 @@ qyec.com
 qyer.com
 qyerstatic.com
 qyfwc.com
-qygciu.com
 qyglzz.com
 qyham.com
 qyhssd.com
@@ -52035,6 +52037,7 @@ salogs.com
 salonglong.com
 salongweb.com
 salonwith.com
+saltyvm.net
 samanlehua.com
 samcui.com
 samhotele.com
@@ -60819,8 +60822,10 @@ vpser.net
 vpsgo.com
 vpskk.com
 vpskp.com
+vpsloop.com
 vpsmm.com
 vpsor.com
+vpsqb.com
 vpsrb.com
 vpsrr.com
 vpssir.com
@@ -60845,6 +60850,7 @@ vrcan.com
 vrcdkj.com
 vrcfo.com
 vrdou.com
+vredian.com
 vrerse.com
 vrgame520.com
 vrguancha.net
@@ -64160,6 +64166,7 @@ x88dushu.com
 xa.com
 xa189.net
 xa9t.com
+xabbp.com
 xabbs.com
 xabcloud.com
 xacbank.com
@@ -65440,7 +65447,6 @@ xingkongweishi.net
 xingkoo.com
 xingkuad.com
 xinglai.com
-xingletown.com
 xingmai58.com
 xingmao.cc
 xingmeihui.com
@@ -67396,6 +67402,7 @@ ydbimg.com
 ydc360.com
 ydcabin.com
 ydcss.com
+yddashi.com
 yddyw.com
 ydfwgg.com
 ydgxqkl.com
@@ -70486,7 +70493,6 @@ zg163.net
 zg3721.com
 zg388.com
 zg45.net
-zg5.cc
 zga81.com
 zgaxr.com
 zgazxxw.com
@@ -70994,6 +71000,7 @@ zhengyounet.com
 zhengyuanjd.com
 zhengzai.tv
 zhengzhantianxia.net
+zhengzhiwen.net
 zhengzhoubus.com
 zhengzhoulvxing.com
 zhengzi.me
