@@ -161,27 +161,15 @@ teardown_init_script() {
 }
 
 wait_v2ray_start() {
-  i=2
-  while
+  i=5
+  while [ ! "$(pidof v2ray)" ] && [ $i -gt 0 ];do
     i=$((i-1))
+    echo_date "Waiting v2ray to start..."
     sleep 1
-    [ ! "$(pidof v2ray)" ] && [ $i -gt 0 ]
-  do :; done
+  done
 
   if [ $i -eq 0 ]; then
     echo_date "Failed to start V2Ray"
-    exit 1
-  fi
-}
-
-wait_v2ray_stop() {
-  i=5
-  while [ "$(pidof v2ray)" ] && [ $i -gt 0 ]; do
-    i=$((i-1))
-    sleep 1
-  done
-  if [ $i -eq 0 ]; then
-    echo_date "Failed to stop V2Ray"
     exit 1
   fi
 }
@@ -208,12 +196,11 @@ start_v2ray() {
 
 stop_v2ray() {
   pid=$(pidof v2ray)
-  if [ "$pid" ]; then
-    kill "$pid"
-    wait_v2ray_stop
+  if [ "$pid" ] && [ -z "$(kill "$pid")" ]; then
     echo_date "V2Ray has been stopped"
   else
     echo_date "Can not found process of V2Ray"
+    exit 1
   fi
 }
 
