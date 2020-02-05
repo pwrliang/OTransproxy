@@ -342,7 +342,7 @@ creat_ipset(){
 
 	for ip in $PROXY_IP_LIST
 	do
-		ipset -! add PROXY_SET $ip >/dev/null 2>&1
+		ipset -! add PROXY_SET "$ip" >/dev/null 2>&1
 	done
 }
 
