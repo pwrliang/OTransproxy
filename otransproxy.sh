@@ -269,6 +269,7 @@ update_rules() {
     echo_date "Failed to fetch rules version"
     exit 1
   fi
+  echo_date "Upstream dns server: $UPSTREAM_DNS"
 
   if [ ! -f "$TMP/version" ] || [ "$(cat "$TMP/version")" != "$latest_versions" ] || \
      [ ! -f "$TMP/accelerated-domains.china.txt" ] || [ ! -f "$TMP/chnroute.txt" ]; then
