@@ -95,12 +95,7 @@
     {
       "protocol": "freedom",
       "settings": {},
-      "tag": "direct",
-      "streamSettings": {
-        "sockopt": {
-          "mark": 255
-        }
-      }
+      "tag": "direct"
     },
     {
       "protocol": "blackhole",
