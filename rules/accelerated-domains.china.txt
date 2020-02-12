@@ -6179,7 +6179,6 @@
 5sharing.com
 5snow.com
 5stmt.com
-5stu.com
 5sw.com
 5tangs.com
 5teacher.com
@@ -17734,6 +17733,7 @@ clothjob.com
 clothr.com
 clouclip.com
 cloud-cube.net
+cloud-dns.net
 cloud-frame.com
 cloud-links.net
 cloud-neofussvr.sslcs.cdngc.net
@@ -24217,7 +24217,6 @@ eurexs.com
 eurochinesedaily.com
 eusercenter.com
 euumi.com
-euyyue.com
 ev123.com
 ev123.net
 ev3ds.com
@@ -24699,6 +24698,7 @@ fangyunlin.com
 fangzd.com
 fangzhanhui.com
 fangzhipeng.com
+fangzhizao.com
 fangzhur.com
 fangzongguan.com
 fanhai-hk.com
@@ -36086,6 +36086,7 @@ jiqike.com
 jiqirenku.com
 jiqizhixin.com
 jiqunzhihui.com
+jiqyzz.com
 jirengu.com
 jirenkj.com
 jiriba.com
@@ -51462,7 +51463,6 @@ rrrrdaimao.com
 rrs.com
 rrscdn.com
 rrsdl.com
-rrshouyou.com
 rrsub.com
 rrsub.net
 rrswl.com
@@ -54458,7 +54458,6 @@ slimtheme.com
 slinceob.com
 slink8.com
 slinli.com
-slinr.com
 sljkm.com
 sljypt.com
 slkj.org
@@ -61841,6 +61840,7 @@ weizhanle.com
 weizhengbrand.com
 weizoom.com
 wejianzhan.com
+wejiazu.com
 wejoydata.com
 wekbo.com
 wekuo.com
@@ -64520,6 +64520,7 @@ xianshiqiba.com
 xianshu.com
 xianshua.net
 xianshuabao.com
+xianshufang.com
 xiantao.com
 xianwangs.cc
 xianwangx.com
@@ -68360,6 +68361,7 @@ yoodb.com
 yoodoing.com
 yooek.com
 yooerjia.com
+yoogamall.com
 yoohouse.com
 yooknet.com
 yookou.com
