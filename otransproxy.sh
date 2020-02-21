@@ -95,6 +95,8 @@ install_v2ray() {
     filename="v2ray-linux-64.zip"
   elif [ "$arch" = "mips" ]; then
     filename="v2ray-linux-mips.zip"
+  elif [ "$arch" = "aarch64" ];then
+    filename="v2ray-linux-arm64.zip"
   else
     echo "Unsupported arch: $arch"
     exit 1
