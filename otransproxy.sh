@@ -164,8 +164,8 @@ teardown_init_script() {
 
 wait_v2ray_start() {
   i=5
-  # Sleep 2s to prevent see the pid immediately
-  sleep 2
+  # Sleep 1s to prevent see the pid immediately
+  sleep 1
   while [ ! "$(pidof v2ray)" ] && [ $i -gt 0 ];do
     i=$((i-1))
     echo_date "Waiting v2ray to start..."
