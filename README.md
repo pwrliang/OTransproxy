@@ -10,10 +10,10 @@ simply modify the script. **My intention in writing this script is to learning s
 ```sh
 mkdir -p /opt/OTransproxy && \
 cd /opt/OTransproxy && \
-wget -q https://raw.githubusercontent.com/pwrliang/OTransproxy/master/otransproxy.sh && \
-wget -q https://raw.githubusercontent.com/pwrliang/OTransproxy/master/config.json && \
-wget -q https://raw.githubusercontent.com/pwrliang/OTransproxy/master/bypass.list && \
-wget -q https://raw.githubusercontent.com/pwrliang/OTransproxy/master/proxy.list && \
+wget https://raw.githubusercontent.com/pwrliang/OTransproxy/master/otransproxy.sh && \
+wget https://raw.githubusercontent.com/pwrliang/OTransproxy/master/config.json && \
+wget https://raw.githubusercontent.com/pwrliang/OTransproxy/master/bypass.list && \
+wget https://raw.githubusercontent.com/pwrliang/OTransproxy/master/proxy.list && \
 chmod +x otransproxy.sh
 ```
 2. Custom you own config.json of V2Ray. Fill your IPs/domains of V2Ray servers into `bypass.list`, otherwise it causes **INFINITELY** proxy.
