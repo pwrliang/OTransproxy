@@ -109,7 +109,7 @@ install_v2ray() {
 
     if unzip "$TMP/v2ray.zip" -d "$TMP/v2ray" >/dev/null; then
       [ ! -d "$WORKPLACE/v2ray" ] && mkdir -p "$WORKPLACE/v2ray"
-      if [ "$arch" = "x86_64" ]; then
+      if [ "$arch" = "x86_64" ] || [ "$arch" = "aarch64" ]; then
         mv -f "$TMP/v2ray/v2ctl" "$WORKPLACE/v2ray/v2ctl"
         mv -f "$TMP/v2ray/v2ray" "$WORKPLACE/v2ray/v2ray"
       else
