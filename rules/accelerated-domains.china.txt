@@ -12,7 +12,6 @@
 000w.net
 001-us.com
 001133.app
-00137.net
 001bank.com
 001ce.com
 001cndc.com
@@ -6496,7 +6495,6 @@
 66ys.co
 66ys.org
 66ys.tv
-66ysbbs.com
 66yxq.com
 66zhang.com
 66zhibo.net
@@ -6882,7 +6880,6 @@
 761.com
 7618.com
 761w.com
-7624.net
 762rc.com
 7639616.com
 764100.com
@@ -9869,7 +9866,6 @@ ajzby.com
 ak0.tw
 ak1ak1.com
 ak47ids.com
-ak92.com
 akaedu.org
 akaifa.com
 akangdi.com
@@ -22100,7 +22096,6 @@ douwanweb.com
 douxie.com
 douy18.com
 douya2.com
-douyaju.com
 douyaobuy.com
 douyapu.com
 douyar.com
@@ -24258,7 +24253,6 @@ exness-chinese.com
 exnpk.com
 exntech.com
 exo-mk.com
-exotxt.com
 expai.com
 expba.com
 expcloud.net
@@ -24687,7 +24681,6 @@ fanxiang.com
 fanxiangds.com
 fanxianke.com
 fanxiaojian.com
-fanxiaojiang.com
 fanxihui.com
 fanxing.com
 fanxingxs.com
@@ -32235,7 +32228,6 @@ hxgame.net
 hxgqw.com
 hxgs.net
 hxgwott.com
-hxh999.com
 hxhost.com
 hxinq.com
 hxjbcdn.com
@@ -35979,6 +35971,7 @@ jisuchaxun.com
 jisuchou.com
 jisuclouds.com
 jisucn.com
+jisuim.com
 jisuimg.com
 jisujie.com
 jisukandian.com
@@ -36996,6 +36989,7 @@ julydate.com
 julyedu.com
 julysong.com
 julysxy.xyz
+jumaizhijia.com
 jumanhua.com
 jumei.com
 jumeiglobal.com
@@ -45853,7 +45847,6 @@ nndims.com
 nndsl.com
 nnduyi.com
 nnera.com
-nnf772.net
 nnfzsx.com
 nngdjt.com
 nngjjx.com
@@ -47758,7 +47751,6 @@ piaolianghuay.com
 piaoniu.com
 piaoquantv.com
 piaoshen.com
-piaotian.net
 piaotian.org
 piaowu99.com
 piaowusong.com
@@ -60917,6 +60909,7 @@ wanjiedu.com
 wanjiquan.com
 wanjuanba.com
 wanjuhe.com
+wanka5.com
 wankacn.com
 wanke123.com
 wanke798.com
@@ -66902,6 +66895,7 @@ ydmel.com
 ydmeng.com
 ydmob.com
 ydmsh.com
+ydmwifi.com
 ydn5.com
 ydnewmedia.com
 ydr.me
@@ -68460,7 +68454,6 @@ youzhei.com
 youzhi.net
 youzhicai.com
 youzhidy.com
-youzhileys.com
 youzhiwk.com
 youzhixueyuan.com
 youzhuan.com
@@ -71650,6 +71643,7 @@ zlgsj.com
 zlhelp.com
 zlhome.com
 zlhudong.com
+zlhui.com
 zlibs.com
 zlimg.com
 zlink-e.com
