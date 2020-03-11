@@ -883,6 +883,7 @@
 0xffffff.org
 0xsky.com
 0xue.com
+0y856.com
 1-111-1.com
 1-123.com
 1-cs.net
@@ -3064,6 +3065,7 @@
 2haohr.com
 2heng.xin
 2hua.com
+2i0vw.com
 2ibook.com
 2ic.cc
 2ifeng.com
@@ -3113,6 +3115,7 @@
 2tudy.com
 2utor.com
 2v8d.com
+2vc00.com
 2w.cm
 2weima.com
 2wk.com
@@ -5895,7 +5898,6 @@
 591hx.com
 591lw.com
 591master.com
-591mogu.com
 591moto.com
 591mxh.com
 591pk.com
@@ -12200,6 +12202,7 @@ bdurl.net
 bdwater.com
 bdwm.net
 bdwork.com
+bdxhj.com
 bdxiaodai.com
 bdxx.net
 bdydns.com
@@ -12261,6 +12264,8 @@ behance.ltd
 behe.com
 bei1688.com
 beian88.com
+beianapi29.com
+beianapi30.com
 beianbaba.com
 beianidc.com
 beianok.com
@@ -20589,6 +20594,7 @@ ddooo.com
 ddos-defend.com
 ddos.com
 ddosc.com
+ddosendns.com
 ddosi.com
 ddove.com
 ddpa.com
@@ -25684,6 +25690,7 @@ fqzww.com
 fr-odc.samsungapps.com
 fr-trading.com
 fr2007.com
+fr8npi.com
 fractal-technology.com
 francissoung.com
 francochinois.com
@@ -27249,7 +27256,6 @@ gmt-china.org
 gmtv.cc
 gmwuf.com
 gmz88.com
-gmzzy.com
 gn00.com
 gn168.com
 gnaixx.cc
@@ -31016,6 +31022,7 @@ housedp.com
 housenhe.com
 houseqilu.com
 housoo.com
+houtu666.com
 houwenjie.com
 houxue.com
 houyicaiji.com
@@ -32457,6 +32464,7 @@ i5i6.net
 i5read.com
 i5seo.com
 i6879.com
+i7aot4.com
 i7fh.com
 i7gg.com
 i7play.com
@@ -32819,7 +32827,6 @@ idaybreak.com
 idc-icp.com
 idc.moe
 idc.sh
-idc.tg
 idc002.com
 idc021.com
 idc123.com
@@ -38299,7 +38306,6 @@ knowncoin.com
 knownsec.com
 knowsafe.com
 knowsky.com
-knowwedding.com
 knowyourself.cc
 knoya.com
 knsyxw.com
@@ -42402,7 +42408,6 @@ masscrunch.com
 masteringwebhosting.com
 masterlab.vip
 masterlifewh.com
-masterliu.net
 mastersay.com
 mastersim123.com
 mastertimes.net
@@ -45941,7 +45946,6 @@ nthfw.com
 ntjoy.com
 ntjrchina.com
 ntjymall.com
-ntketai.com
 ntneuro.org
 ntp.felixc.at
 ntpcb.com
@@ -46921,6 +46925,7 @@ p31.net
 p3k3.com
 p4.cc
 p44.com
+p491gt.com
 p4pp.com
 p4vip.com
 p512.com
@@ -48614,7 +48619,6 @@ qas4x8cw.com
 qast.com
 qayqa.com
 qb.com
-qb01.com
 qb5.tw
 qb5200.com
 qb5200.tw
@@ -50201,7 +50205,6 @@ qwomcrm.com
 qwpeo.net
 qwq4.com
 qwqk.net
-qwqt.net
 qwspcz.com
 qwsy.com
 qwxcs.com
@@ -51718,6 +51721,7 @@ scdnl9cm.com
 scdnmogt.com
 scdno5zl.com
 scdnrvy1.com
+scdnucc5.com
 scdnurea.com
 scdri.com
 scdzmw.com
@@ -53101,7 +53105,6 @@ shncsl.com
 shnczq.org
 shneweye.com
 shniec.com
-shnmc.org
 shnosbbs.com
 shnsyh.com
 shoasis.net
@@ -61085,7 +61088,6 @@ webdiyer.com
 webfalse.com
 webfont.com
 webfoss.com
-webfoxers.com
 webfreecounter.com
 webfuns.net
 webfuwu.com
@@ -61123,6 +61125,9 @@ webshu.net
 websjx.com
 websjy.com
 websocket-test.com
+websocket2.com
+websocket5.com
+websocket6.com
 websoft9.com
 webspherechina.net
 webterren.com
@@ -66649,6 +66654,7 @@ ybm100.com
 ybren.com
 ybrxl.com
 ybs120.com
+ybtest45.com
 ybtoad.com
 ybtvyun.com
 ybtzjt.com
@@ -67026,7 +67032,6 @@ yi6.com
 yi7.com
 yi958.com
 yiaedu.com
-yiai.cc
 yiai.me
 yian.me
 yianju.ltd
@@ -68615,7 +68620,6 @@ yuanzun888.com
 yuanzunxs.cc
 yuaoart.com
 yuapt.com
-yuaz.net
 yubangweb.com
 yubodata.com
 yubohr.com
@@ -69378,7 +69382,6 @@ yzfang.com
 yzfjy.com
 yzfy.org
 yzgttm.com
-yzh.hk
 yzhbw.net
 yzhli.com
 yzhtidc.com
