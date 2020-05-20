@@ -1,3 +1,3 @@
 # RULE  NUM  CHECKSUM
-ACCELERATED_DOMAINS 76002    f7db1be64ec8e43cdb4cb4a5bac57b10  ./rules/accelerated-domains.china.txt
+ACCELERATED_DOMAINS 75989    24bb8838556d0e7ee3ed51ee8fd8d3b6  ./rules/accelerated-domains.china.txt
 CHNROUTE 5881    bfeb489b5709fc27dbe8e5af6d2445d7  ./rules/chnroute.txt
